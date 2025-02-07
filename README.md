@@ -15,6 +15,7 @@ A minimalist, educational kernel implementation written in C and Assembly. This 
 - `hello` - Display a greeting message
 - `clear` - Clear the screen
 - `reboot` - Soft reboot the system
+- `creed` - Displays my credentials
 
 ## Technical Details
 
