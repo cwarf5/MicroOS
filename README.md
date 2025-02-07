@@ -16,6 +16,8 @@ A minimalist, educational kernel implementation written in C and Assembly. This 
 - `clear` - Clear the screen
 - `reboot` - Soft reboot the system
 - `creed` - Displays my credentials
+  
+![creedcmd](https://github.com/user-attachments/assets/e8bc76a0-48c8-4bfe-b020-514e1f22f259)
 
 ## Technical Details
 
