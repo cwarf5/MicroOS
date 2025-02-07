@@ -79,6 +79,7 @@ void print_string(const char* str) {
     update_cursor();
 }
 
+// -------- COMMANDS --------
 // Help command - list available commands
 void help_command() {
     print_string("Available commands:\n");
@@ -86,7 +87,21 @@ void help_command() {
     print_string("  hello - Display a greeting\n");
     print_string("  clear - Clear the screen\n");
     print_string("  reboot - Reboot the system\n");
+    print_string("  creed - Display my credentials\n");
 }
+
+// Creed command function
+void creed_command() {
+    print_string("Name: Creed Warf\n");
+    print_string("----- DEGREE -----\n");
+    print_string("Bachelor of Science in Computer Science\n");
+    print_string("University of Virginia's College at Wise\n");
+    print_string("----- EXPERIENCE -----\n");
+    print_string("IT Help Desk Analyst - Ballad Health\n");
+    print_string("----- SKILLS -----\n");
+    print_string("C, C++, Python, Assembly, SQL, HTML, CSS, JavaScript\n");
+}
+
 
 // Hello command
 void hello_command() {
@@ -128,6 +143,8 @@ void process_command(char* command) {
         clear_screen();
     } else if (strcmp(command, "reboot") == 0) {
         reboot_command();
+    } else if (strcmp(command, "creed") == 0) {
+        creed_command();
     } else {
         print_string("Unknown command: ");
         print_string(command);
